@@ -11,6 +11,6 @@
     required: true
   port:
     description: "Server port to use"
-    type: "string"
+    type: "integer"
     required: true
     default: 443
