@@ -6,7 +6,7 @@ deployment automation system for .NET applications.
 
 ## Actions
 
-Currently, the following actions listed bellow are supported:
+The following actions are supported:
 
 ### Projects
 
@@ -30,10 +30,11 @@ Currently, the following actions listed bellow are supported:
 
 ## Configuration
 
-Update config.yaml to setup the connection to Octopus.
+Copy the example configuration in [octopus.yaml.example](./octopus.yaml.example)
+to `/opt/stackstorm/configs/octopus.yaml` and edit as required. It must contain:
 
 * `api_key` - an API key generated in Octopus for your user http://docs.octopusdeploy.com/display/OD/How+to+create+an+API+key 
 * `host` - the host name of your Octopus server e.g. octopus.mydomain.com
 * `port` - the port your API service is running on, 443 by default
 
-a tutorial on this pack https://stackstorm.com/2015/10/01/octopusdeploy-integration-with-stackstorm/
+Read this pack tutorial for more information: https://stackstorm.com/2015/10/01/octopusdeploy-integration-with-stackstorm/
