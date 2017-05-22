@@ -30,8 +30,8 @@ The following actions are supported:
 
 ## Configuration
 
-Copy the example configuration in [octopus.yaml.example](./octopus.yaml.example)
-to `/opt/stackstorm/configs/octopus.yaml` and edit as required. It must contain:
+Copy the example configuration in [octopusdeploy.yaml.example](./octopusdeploy.yaml.example)
+to `/opt/stackstorm/configs/octopusdeploy.yaml` and edit as required. It must contain:
 
 * `api_key` - an API key generated in Octopus for your user http://docs.octopusdeploy.com/display/OD/How+to+create+an+API+key 
 * `host` - the host name of your Octopus server e.g. octopus.mydomain.com
