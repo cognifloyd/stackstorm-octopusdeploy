@@ -1,0 +1,4 @@
+---
+api_key: "CHANGEME"
+host: "octopus.mydomain.com"
+port: 443
