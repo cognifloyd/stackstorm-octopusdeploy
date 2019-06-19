@@ -34,7 +34,7 @@ class OctopusDeployAction(Action):
     def _build_uri(self):
         # big assumption but it'll cover 99% case,
         # as octopus runs https by default
-        start = "http://" if self.client.port is 80 else "https://"
+        start = "http://" if self.client.port == 80 else "https://"
         return start + self.client.host + ":" + str(self.client.port) + "/api/"
 
     def make_post_request(self, action, payload):
