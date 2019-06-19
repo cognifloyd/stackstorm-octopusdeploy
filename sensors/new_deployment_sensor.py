@@ -22,7 +22,7 @@ class NewDeploymentSensor(OctopusDeploySensor):
         if deployments is None:
             self._logger.info('No deployments found')
             return
-        if len(deployments) is 0:
+        if len(deployments) == 0:
             self._logger.info('Empty list of deployments')
             return
 
@@ -68,7 +68,7 @@ class NewDeploymentSensor(OctopusDeploySensor):
         deployments = self._get_deployments()
         if deployments is None:
             return None
-        if len(deployments) is not 1:
+        if len(deployments) != 1:
             return None
         return deployments[0]
 

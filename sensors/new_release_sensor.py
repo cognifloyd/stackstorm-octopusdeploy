@@ -21,7 +21,7 @@ class NewReleaseSensor(OctopusDeploySensor):
         if releases is None:
             self._logger.info('No releases found')
             return
-        if len(releases) is 0:
+        if len(releases) == 0:
             self._logger.info('Empty list of releases')
             return
 
@@ -67,7 +67,7 @@ class NewReleaseSensor(OctopusDeploySensor):
         releases = self._get_releases()
         if releases is None:
             return None
-        if len(releases) is not 1:
+        if len(releases) != 1:
             return None
         return releases[0]
 
